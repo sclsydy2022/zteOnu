@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=Ql9F47ndj7s
+开启telnet的方法适用 F677V9/F7607P/F4607P/G7615/F7015TV3/F7005TV3/F7615TV3
+开源项目地址 https://github.com/Septrum101/zteOnu
+关键步骤：设置电脑网卡的mac地址为000729553557
+命令 zteOnu --telnet
+
+—修改参数命令—
+setmac show2 查看系统参数
+
+setmac 1 修改 2查看 3删除
+setmac 1 [ID] [内容]
+setmac 1 32769   修改光猫的MAC地址（可选），列如格式是：setmac 1 32769 B4:BA:12:B8:EE:50
+setmac 1 2176    gponSN前4位
+setmac 1 2177    gponSN后8位
+setmac 1 768     设备标识码前6位数字（可选）
+setmac 1 512     设备标识码后17位数字（可选）
+setmac 1 2180 LOID （与2179不同时改）
+setmac 1 2179 password （与2180不同时改）
+另外，没必要改地区，除非你想被运营商管控
